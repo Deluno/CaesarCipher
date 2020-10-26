@@ -17,11 +17,13 @@ namespace CaesarCipher
             Random random = new Random();
             int offset = random.Next(1, 25);
             richTextBox2.Text = ed.Encode(richTextBox1.Text, offset);
+            richTextBox1.Clear();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = ed.Decode(richTextBox2.Text);
+            richTextBox2.Clear();
         }
     }
 }
