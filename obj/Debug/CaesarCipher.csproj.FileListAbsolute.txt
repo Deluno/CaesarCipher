@@ -1,0 +1,10 @@
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\bin\Debug\CaesarCipher.exe.config
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\bin\Debug\CaesarCipher.exe
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\bin\Debug\CaesarCipher.pdb
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\obj\Debug\CaesarCipher.csprojAssemblyReference.cache
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\obj\Debug\CaesarCipher.Form1.resources
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\obj\Debug\CaesarCipher.Properties.Resources.resources
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\obj\Debug\CaesarCipher.csproj.GenerateResource.cache
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\obj\Debug\CaesarCipher.exe
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\obj\Debug\CaesarCipher.pdb
+C:\Users\danil\source\repos\CaesarCipher\CaesarCipher\obj\Debug\CaesarCipher.csproj.CoreCompileInputs.cache
