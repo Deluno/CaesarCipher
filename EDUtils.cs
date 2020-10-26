@@ -5,10 +5,6 @@ namespace CaesarCipher
 {
     public class EDUtils
     {
-        const int a_CHAR_SYMBOL = 65;
-        const int z_CHAR_SYMBOL = 90;
-        const int A_CHAR_SYMBOL = 97;
-        const int Z_CHAR_SYMBOL = 122;
         const int ALPHABET_SIZE = 26;
 
         public string Encode(string str, int offset)
@@ -18,13 +14,13 @@ namespace CaesarCipher
             {
                 foreach (var symbol in str)
                 {
-                    if ((symbol + offset <= z_CHAR_SYMBOL && symbol >= a_CHAR_SYMBOL) ||
-                        (symbol + offset <= Z_CHAR_SYMBOL && symbol >= A_CHAR_SYMBOL))
+                    if ((symbol + offset <= 'z' && symbol >= 'a') ||
+                        (symbol + offset <= 'Z' && symbol >= 'A'))
                     {
                         result.Append((char)(symbol + offset));
                     }
-                    else if ((symbol <= z_CHAR_SYMBOL && symbol > z_CHAR_SYMBOL - offset) ||
-                             (symbol <= Z_CHAR_SYMBOL && symbol > Z_CHAR_SYMBOL - offset))
+                    else if ((symbol <= 'z' && symbol > 'z' - offset) ||
+                             (symbol <= 'Z' && symbol > 'Z' - offset))
                     {
                         result.Append((char)(symbol - (ALPHABET_SIZE - offset)));
                     }
@@ -54,13 +50,13 @@ namespace CaesarCipher
                         str = str.Remove(0, endOfFirstLine + 1);
                         foreach (var symbol in str)
                         {
-                            if ((symbol <= z_CHAR_SYMBOL && symbol - offset >= a_CHAR_SYMBOL) ||
-                                (symbol <= Z_CHAR_SYMBOL && symbol - offset >= A_CHAR_SYMBOL))
+                            if ((symbol <= 'z' && symbol - offset >= 'a') ||
+                                (symbol <= 'Z' && symbol - offset >= 'A'))
                             {
                                 result.Append((char)(symbol - offset));
                             }
-                            else if ((symbol - offset < a_CHAR_SYMBOL && symbol >= a_CHAR_SYMBOL) ||
-                                     (symbol - offset < A_CHAR_SYMBOL && symbol >= A_CHAR_SYMBOL))
+                            else if ((symbol - offset < 'a' && symbol >= 'a') ||
+                                     (symbol - offset < 'A' && symbol >= 'A'))
                             {
                                 result.Append((char)(symbol + (ALPHABET_SIZE - offset)));
                             }
